@@ -10,8 +10,8 @@ Gem::Specification.new do |spec|
   spec.authors       = [ 'Topbit Du' ]
   spec.email         = [ 'topbit.du@gmail.com' ]
 
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
+  spec.summary       = %q{Wechat Server Validation Library}
+  spec.description   = %q{This gem is a low level library for Wechat Server Validation.}
   spec.homepage      = 'https://github.com/topbitdu/wechat-validation'
   spec.license       = 'MIT'
 
