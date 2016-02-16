@@ -1,6 +1,10 @@
-# Wechat::Validation
+# Wechat Validation 微信服务器验证库
+
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](http://opensource.org/licenses/MIT)
+[![Gem Version](https://badge.fury.io/rb/wechat-validation.svg)](https://badge.fury.io/rb/wechat-validation)
 
 The Wechat Server Validation Library is a code base for validating the HTTP server in Wechat.
+微信服务器验证库用于处理[微信服务器验证请求](http://mp.weixin.qq.com/wiki/8/f9a0b8382e0b77d87b3bcc1ce6fbc104.html#.E7.AC.AC.E4.BA.8C.E6.AD.A5.EF.BC.9A.E9.AA.8C.E8.AF.81.E6.9C.8D.E5.8A.A1.E5.99.A8.E5.9C.B0.E5.9D.80.E7.9A.84.E6.9C.89.E6.95.88.E6.80.A7)。
 
 ## Installation
 
