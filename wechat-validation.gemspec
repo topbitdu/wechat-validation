@@ -10,8 +10,8 @@ Gem::Specification.new do |spec|
   spec.authors       = [ 'Topbit Du' ]
   spec.email         = [ 'topbit.du@gmail.com' ]
 
-  spec.summary       = %q{Wechat Server Validation Library}
-  spec.description   = %q{This gem is a low level library for Wechat Server Validation.}
+  spec.summary       = %q{Wechat Server Validation Library 微信服务器验证库}
+  spec.description   = %q{Wechat Server Validation Library handles the validation requests from the Wechat servers. 微信服务器验证库用于处理微信服务器发出的验证请求。}
   spec.homepage      = 'https://github.com/topbitdu/wechat-validation'
   spec.license       = 'MIT'
 
@@ -24,7 +24,7 @@ Gem::Specification.new do |spec|
   #end
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
-  spec.bindir        = "exe"
+  spec.bindir        = 'exe'
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = [ 'lib' ]
 
