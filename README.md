@@ -24,8 +24,14 @@ Or install it yourself as:
 
 ## Usage
 
-actual_signature = ::Wechat::Validation.sign(nonce, timestamp, token)
-
+```ruby
+actual_signature = ::Wechat::Validation.sign(params[:nonce], params[:timestamp], Rails.application.secrets.wechat_validation_token)
+if params[:signature]==actual_signature
+  # Correct
+else
+  # Wrong
+end
+```
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
