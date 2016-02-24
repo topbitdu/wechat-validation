@@ -4,16 +4,14 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'wechat/validation/version'
 
 Gem::Specification.new do |spec|
-
-  spec.name          = 'wechat-validation'
-  spec.version       = Wechat::Validation::VERSION
-  spec.authors       = [ 'Topbit Du' ]
-  spec.email         = [ 'topbit.du@gmail.com' ]
-
-  spec.summary       = %q{Wechat Server Validation Library 微信服务器验证库}
-  spec.description   = %q{Wechat Server Validation Library handles the validation requests from the Wechat servers. 微信服务器验证库用于处理微信服务器发出的验证请求。}
-  spec.homepage      = 'https://github.com/topbitdu/wechat-validation'
-  spec.license       = 'MIT'
+  spec.name        = 'wechat-validation'
+  spec.version     = Wechat::Validation::VERSION
+  spec.authors     = [ 'Topbit Du' ]
+  spec.email       = [ 'topbit.du@gmail.com' ]
+  spec.summary     = 'Wechat Server Validation Library 微信服务器验证库'
+  spec.description = 'Wechat Server Validation Library handles the validation requests from the Wechat servers. 微信服务器验证库用于处理微信服务器发出的验证请求。'
+  spec.homepage    = 'https://github.com/topbitdu/wechat-validation'
+  spec.license     = 'MIT'
 
   # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or
   # delete this section to allow pushing this gem to any host.
