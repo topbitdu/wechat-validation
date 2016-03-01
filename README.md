@@ -25,7 +25,7 @@ Or install it yourself as:
 ## Usage
 
 ```ruby
-actual_signature = ::Wechat::Validation.sign(params[:nonce], params[:timestamp], Rails.application.secrets.wechat_validation_token)
+actual_signature = ::Wechat::Validation::Signature.create(params[:nonce], params[:timestamp], Rails.application.secrets.wechat_validation_token)
 if params[:signature]==actual_signature
   # Correct
 else
