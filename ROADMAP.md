@@ -7,4 +7,4 @@
 1. Deprecate the Wechat Validation ::sign method, use Wechat Validation Signature ::create instead
 
 ## v1.0
-1. Removed the deprecated classes & methods
+1. Remove the deprecated classes & methods
