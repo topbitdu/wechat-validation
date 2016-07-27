@@ -10,7 +10,11 @@ class Wechat::Validation::Signature
   # 2. 将三个参数字符串拼接成一个字符串进行sha1加密
   # 3. 开发者获得加密后的字符串可与signature对比，标识该请求来源于微信
   def self.create(nonce, timestamp, token)
+
+    raise ArgumentError.new('The nonce argument is required.') if nonce.blank?
+
     Digest::SHA1.hexdigest [ nonce, timestamp, token ].sort.join
+
   end
 
 end
