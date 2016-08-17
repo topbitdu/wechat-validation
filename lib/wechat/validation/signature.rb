@@ -13,6 +13,7 @@ class Wechat::Validation::Signature
 
     raise ArgumentError.new('The nonce argument is required.') if nonce.blank?
     raise ArgumentError.new('The timestamp argument is required.') if timestamp.blank?
+    raise ArgumentError.new('The token argument is required.') if token.blank?
 
     Digest::SHA1.hexdigest [ nonce, timestamp, token ].sort.join
 
