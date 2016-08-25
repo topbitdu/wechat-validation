@@ -11,7 +11,7 @@ class Wechat::Validation::Signature
   # 3. 开发者获得加密后的字符串可与signature对比，标识该请求来源于微信
   def self.create(nonce, timestamp, token)
 
-    raise ArgumentError.new('The nonce argument is required.') if nonce.blank?
+    raise ArgumentError.new('The nonce argument is required.'    ) if nonce.blank?
     raise ArgumentError.new('The timestamp argument is required.') if timestamp.blank?
     raise ArgumentError.new('The token argument is required.') if token.blank?
 
