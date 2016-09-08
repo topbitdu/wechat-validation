@@ -1,5 +1,7 @@
 class Wechat::Validation::Signature
 
+  extend Wechat::Core::Common
+
   # 验证服务器地址的有效性
   # http://mp.weixin.qq.com/wiki/8/f9a0b8382e0b77d87b3bcc1ce6fbc104.html#.E7.AC.AC.E4.BA.8C.E6.AD.A5.EF.BC.9A.E9.AA.8C.E8.AF.81.E6.9C.8D.E5.8A.A1.E5.99.A8.E5.9C.B0.E5.9D.80.E7.9A.84.E6.9C.89.E6.95.88.E6.80.A7
   #
@@ -11,7 +13,8 @@ class Wechat::Validation::Signature
   # 3. 开发者获得加密后的字符串可与signature对比，标识该请求来源于微信
   def self.create(nonce, timestamp, token)
 
-    raise ArgumentError.new('The nonce argument is required.'    ) if nonce.blank?
+    assert_present! :nonce, nonce
+    #raise ArgumentError.new('The nonce argument is required.'    ) if nonce.blank?
     raise ArgumentError.new('The timestamp argument is required.') if timestamp.blank?
     raise ArgumentError.new('The token argument is required.'    ) if token.blank?
 
