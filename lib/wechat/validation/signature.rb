@@ -14,8 +14,8 @@ class Wechat::Validation::Signature
   def self.create(nonce, timestamp, token)
 
     assert_present! :nonce, nonce
-    #raise ArgumentError.new('The nonce argument is required.'    ) if nonce.blank?
-    raise ArgumentError.new('The timestamp argument is required.') if timestamp.blank?
+    assert_present! :timestamp, timestamp
+    #raise ArgumentError.new('The timestamp argument is required.') if timestamp.blank?
     raise ArgumentError.new('The token argument is required.'    ) if token.blank?
 
     Digest::SHA1.hexdigest [ nonce, timestamp, token ].sort.join
