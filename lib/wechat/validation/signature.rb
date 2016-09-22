@@ -16,7 +16,7 @@ class Wechat::Validation::Signature
     assert_present! :nonce, nonce
     assert_present! :timestamp, timestamp
     #raise ArgumentError.new('The timestamp argument is required.') if timestamp.blank?
-    raise ArgumentError.new('The token argument is required.'    ) if token.blank?
+    assert_present! :token, token
 
     Digest::SHA1.hexdigest [ nonce, timestamp, token ].sort.join
 
