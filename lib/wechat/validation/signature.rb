@@ -17,7 +17,7 @@ class Wechat::Validation::Signature
     assert_present! :timestamp, timestamp
     assert_present! :token,     token
 
-    Digest::SHA1.hexdigest [ nonce, timestamp, token ].sort.join
+    Digest::SHA1.hexdigest [ nonce.to_s, timestamp.to_s, token.to_s ].sort.join
 
   end
 
