@@ -1,14 +1,14 @@
 PATH
   remote: .
   specs:
-    wechat-validation (0.2)
-      wechat-core (>= 0.3)
+    wechat-validation (0.2.1)
+      wechat-core (>= 0.4)
 
 GEM
   remote: https://rubygems.org/
   specs:
     diff-lcs (1.2.5)
-    httpclient (2.8.2)
+    httpclient (2.8.2.4)
     rake (10.5.0)
     rspec (3.4.0)
       rspec-core (~> 3.4.0)
@@ -23,8 +23,8 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.4.0)
     rspec-support (3.4.1)
-    wechat-core (0.3)
-      httpclient (~> 2.7)
+    wechat-core (0.4)
+      httpclient (>= 2.8)
 
 PLATFORMS
   ruby
