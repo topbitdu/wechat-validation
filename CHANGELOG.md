@@ -7,5 +7,5 @@
 1. Deprecated the Wechat Validation ::sign method, use Wechat Validation Signature ::create instead
 
 ## v0.2.1
-1. Improve the Ruby Gem Specification to depend on [wechat-core](https://github.com/topbitdu/wechat-core) v0.4
+1. Improved the Ruby Gem Specification to depend on [wechat-core](https://github.com/topbitdu/wechat-core) v0.4
 2. Improve the Signature class for the argument validation
