@@ -1,3 +1,16 @@
+##
+# Signature 是参数签名类，用于生成参数签名。如：
+# nonce     = # Get the nonce from the request parameters.
+# timestamp = # Get the timestamp from the request parameters.
+# token     = # Load the token from the configuration file.
+# actual_signature   = # Get the actual signature from the request parameters.
+# expected_signature = Wechat::Validation::Signature.create nonce, timestamp, token
+# if expected_signature==actual_signature
+#   # The signature is matched.
+# else
+#   # The signature is not matched.
+# end
+
 class Wechat::Validation::Signature
 
   extend Wechat::Core::Common
