@@ -8,4 +8,4 @@
 
 ## v0.2.1
 1. Improved the Ruby Gem Specification to depend on [wechat-core](https://github.com/topbitdu/wechat-core) v0.4
-2. Improve the Signature class for the argument validation
+2. Improved the Signature class for the argument validation
